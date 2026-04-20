@@ -93,7 +93,7 @@ export default function Works() {
                     </ul>
                     <div className={styles.moreBtn}>
                         <div>
-                            <a href="">
+                            <a href="https://www.notion.so/34861c26a855801fb15afa7fe035a62a?source=copy_link" target="_blank">
                                 SEE<br/> FULL PROJECTS
                                 <IconArrow/>
                             </a>
