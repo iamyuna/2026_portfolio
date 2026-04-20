@@ -17,10 +17,10 @@ const Footer = forwardRef(function Footer(props, ref){
                             <p>EMAIL :</p>
                             <a href="mailto:dbsdk95331@naver.com">dbsdk95331@naver.com</a>
                         </li>
-                        {/* <li>
-                            <p>NOTION :</p>
-                            <a href="/" target="_blank">yunahome</a>
-                        </li> */}
+                        <li>
+                            <p>GITHUB :</p>
+                            <a href="https://github.com/iamyuna/2026_portfolio" target="_blank">iamyuna</a>
+                        </li>
                     </ul>
                     <div className={styles.botText}>
                         <p className={styles.copy}>© 2026. Park Yuna Portfolio, Inc. All Rights Reserved.</p>

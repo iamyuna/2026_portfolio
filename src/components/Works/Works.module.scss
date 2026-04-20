@@ -184,41 +184,37 @@
                             transition: 0.5s;
                         }
                     }
+                    &.viewBtn {
+                        display: flex;
+                        width: 100%;
+                        margin-top: 40px;
+                        opacity: 0;
+                        transition: 0.5s;
+
+                        a {
+                            display: inline-block;
+                            font-size: 18px;
+                            line-height: 40px;
+                            color: #eb67ff;
+                            background: rgba(0,0,0,0.8);
+                            padding: 0 15px;
+                            border-radius: 7px;
+                            margin-right: 10px;
+
+                            &:nth-child(2) {
+                                color: #2abbff;
+                            }
+                        }
+
+                        @media (max-width: 1023px) {
+                            opacity: 1;                     
+                        }  
+                    }
                     @media (max-width: 1023px) {
                         &.tit {overflow: visible;}
                         strong, p, li {transform: translateY(0) !important;}                        
                     }   
                 }
-            }
-            .viewBtn {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                display: flex;
-                justify-content: flex-end;
-                width: 100%;
-                padding: 30px;
-                opacity: 0;
-                transition: 0.5s;
-
-                a {
-                    display: inline-block;
-                    font-size: 18px;
-                    line-height: 40px;
-                    color: #eb67ff;
-                    background: rgba(0,0,0,0.8);
-                    padding: 0 15px;
-                    border-radius: 7px;
-                    margin-right: 10px;
-
-                    &:nth-child(2) {
-                        color: #2abbff;
-                    }
-                }
-
-                @media (max-width: 1023px) {
-                    opacity: 1;                     
-                }  
             }
             &:hover {
                 img {
@@ -232,9 +228,10 @@
                     div p {
                         transition-delay: 0.2s;
                     }
-                }
-                .viewBtn {
-                    opacity: 1;
+                    .viewBtn {
+                        opacity: 1;
+                        transition-delay: 0.2s;
+                    }
                 }
             }
         }

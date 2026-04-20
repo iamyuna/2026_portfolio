@@ -86,14 +86,14 @@ export default function Works() {
                                         </div>
                                         <div className={styles.tit}><strong>{project.title}</strong></div>
                                         <div className={styles.des}><p>{project.des}</p></div>
-                                    </div>
-                                    <div className={styles.viewBtn}>
-                                        {project.link ? (
-                                            <a href={project.link} target="_blank">View Site</a>
-                                        ) : null}
-                                        {project.code ? (
-                                            <a href={project.code} target="_blank">View Code</a>
-                                        ) : null}
+                                        <div className={styles.viewBtn}>
+                                            {project.link ? (
+                                                <a href={project.link} target="_blank">View Site</a>
+                                            ) : null}
+                                            {project.code ? (
+                                                <a href={project.code} target="_blank">View Code</a>
+                                            ) : null}
+                                        </div>
                                     </div>
                                 </div>
                             </li>
