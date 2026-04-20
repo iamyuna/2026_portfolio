@@ -1,0 +1,121 @@
+:global(.intro) {
+    height: 100vh;
+    overflow: hidden;
+
+    .container {
+        display: block;
+    }
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1000;
+
+    .inner {
+        position: relative;
+        padding: 80px 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translateY(-50px);
+            margin-left: -50vw;
+            background: #191919;
+            animation: logoAni 0.6s ease forwards 4.3s;
+
+            @media (max-width: 1023px) {
+                top: 20px;
+                transform: translateY(-20px);
+            }
+        }
+    }
+
+}
+@keyframes logoAni {
+    0% {
+        left: 50%;
+        transform: translateY(-50px);
+        margin-left: -50vw;
+        width: 100vw;
+        height: 100vh;
+
+        @media (max-width: 1023px) {
+            transform: translateY(-20px);
+        }
+    }
+    50% {
+        left: 0;
+        transform: translateY(0px);
+        margin-left: 0;
+        width: 62px;
+        height: 62px;
+
+        @media (max-width: 1023px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    100% {
+        left: 0;
+        transform: translateY(0px);
+        margin-left: 0;
+        width: 0;
+        height: 0;
+    }
+}
+.introText {
+    font-size: clamp(40px, 9vw, 172px);
+    font-weight: 500;
+    color: rgba(255,255,255,0.8);
+}
+.introText :global(.text) {
+    overflow: hidden;
+    line-height: 0.7;
+}
+.introText :global(.text + .text) {
+    margin-top: 70px;
+
+    @media (max-width: 1023px) {
+        margin-top: 20px;
+    }
+}
+.introText :global(.text .word) {
+    display: block;
+    transform: translateY(0);
+    animation: textUp 0.5s ease forwards 3.7s;
+}
+.introText :global(.text .char) {
+    display: inline-block;
+
+    &:not(:first-child):not(:last-child){
+        width: 0;
+        opacity: 0;
+        animation: textSplit 0.1s forwards 0.5s;
+        animation-delay: calc(0.5s + 0.15s * var(--char-index));
+    }
+}
+.introText :global(.text.text-02 .char:not(:first-child):not(:last-child)) {
+    animation: textSplit 0.1s forwards 1.5s;
+    animation-delay: calc(1.5s + 0.15s * var(--char-index));
+}
+.introText :global(.text.text-02 .char:nth-child(2)) {
+    width: auto;
+    opacity: 1;
+    animation: none !important;
+}
+@keyframes textSplit {
+    0% {width: 0;opacity: 0;}
+    100% {width: auto;opacity: 1;}
+}
+@keyframes textUp {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(110%);}
+}

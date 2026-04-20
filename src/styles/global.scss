@@ -1,0 +1,40 @@
+@use './base/fonts.scss';
+@use './base/reset.scss';
+
+body {
+    background: #fff;
+}
+.main {
+    position: relative;
+    background: #E6E6E6;
+    transition: background 0.5s;
+    overflow: hidden;
+    z-index: 10;
+}
+.in-view .main {
+    background: #fff;
+}
+.footer-space {
+    height: 85vh;
+}
+.inner {
+    width: 94%;
+    max-width: 1570px;
+    margin: 0 auto;
+}
+.secTitle {
+    position: relative;
+
+    div {
+        + div {
+            margin-top: 60px;
+        }
+
+        strong {
+            display: block;
+            font-size: clamp(50px, 10vw, 172px);
+            font-weight: 500;
+            line-height: 0.8;
+        }
+    }
+}

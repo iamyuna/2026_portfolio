@@ -1,0 +1,129 @@
+[
+    {
+        "id": 1,
+        "title": "천재교육 AIDT",
+        "des": "천재교육의 AIDT 프로젝트입니다.",
+        "skills": [
+            "#Vue",
+            "#Scss"
+        ],
+        "img": "portfolio_aidt",
+        "link": "javascript:vold(0)"
+    },
+    {
+        "id": 2,
+        "title": "Class Link",
+        "des": "천재교육의 클래스링크 웹사이트입니다.",
+        "skills": [
+            "React", 
+            "Storybook", 
+            "Redux", 
+            "Styled-Components"
+        ],
+        "img": "portfolio_classlink",
+        "link": "https://www.classlink.co.kr/"
+    },
+    {
+        "id": 3,
+        "title": "Class Pingpong",
+        "des": "천재교육의 클래스핑퐁 웹사이트입니다.",
+        "skills": [
+            "Html", 
+            "Css", 
+            "Javascript"
+        ],
+        "img": "portfolio_classpingpong",
+        "link": "https://www.clpong.co.kr/"
+    },
+    {
+        "id": 4,
+        "title": "2026 Portfolio",
+        "des": "React로 작업한 포트폴리오 사이트입니다.",
+        "skills": [
+            "React",
+            "Javascript", 
+            "Scss", 
+            "Gsap"
+        ],
+        "img": "portfolio_2026",
+        "link": "/"
+    },
+    {
+        "id": 5,
+        "title": "React Account App",
+        "des": "React 가계부 프로젝트입니다.",
+        "skills": [
+            "React", 
+            "Zustand", 
+            "LocalStorage", 
+            "Tailwind"
+        ],
+        "img": "portfolio_accountapp",
+        "link": "https://iamyuna.github.io/accountapp"
+    },
+    {
+        "id": 6,
+        "title": "Gooroomee Biz",
+        "des": "구루미 비즈의 반응형 웹사이트 입니다.",
+        "skills": [
+            "Html", 
+            "Css", 
+            "JQuery", 
+            "Gsap", 
+            "Swiper.js"
+        ],
+        "img": "portfolio_gooroomee",
+        "link": "https://biz.gooroomee.com/"
+    },
+    {
+        "id": 7,
+        "title": "Isu System Work Up",
+        "des": "이수시스템 Work Up의 반응형 웹사이트 입니다.",
+        "skills": [
+            "Html", 
+            "Css", 
+            "JQuery", 
+            "Gsap", 
+            "Swiper.js"
+        ],
+        "img": "portfolio_isu",
+        "link": "https://www.workup.plus/"
+    },
+    {
+        "id": 8,
+        "title": "Attoplex",
+        "des": "아토플렉스의 반응형 웹사이트 입니다.",
+        "skills": [
+            "Html", 
+            "Css", 
+            "JQuery", 
+            "Swiper.js"
+        ],
+        "img": "portfolio_attoplex",
+        "link": "http://attoplex.co.kr/"
+    },
+    {
+        "id": 9,
+        "title": "Kudos Ventures",
+        "des": "큐더스벤처스의 반응형 웹사이트 입니다.",
+        "skills": [
+            "Html", 
+            "Css", 
+            "JQuery"
+        ],
+        "img": "portfolio_kudos",
+        "link": "http://kudosventures.co.kr/"
+    },
+    {
+        "id": 10,
+        "title": "2023 Portfolio",
+        "des": "2023 웹퍼블리셔 포트폴리오 사이트입니다.",
+        "skills": [
+            "Html", 
+            "Css", 
+            "JQuery"
+        ],
+        "img": "portfolio_web",
+        "link": "https://iamyuna.github.io/2023_portfolio"
+    }
+]

@@ -1,0 +1,114 @@
+.container {
+    padding: 100px 0 250px;
+    overflow: hidden;
+
+    @media (max-width: 1023px) {
+        padding-bottom: 100px;
+    }
+}
+.inner {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 1023px) {
+        display: block;
+    }
+}
+.skillsTitle {
+    width: 50%;
+    padding-bottom: 80px;
+
+    @media (max-width: 1023px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    div {
+        overflow: hidden;
+
+        + div {
+            margin-top: -15px;
+
+            @media (max-width: 1023px) {
+                margin-top: 0;
+            }
+        }
+        strong {
+            line-height: 1.2;
+            transform: translateY(100%);
+            transition: 0.5s 0.2s;
+        }
+        
+    }
+
+    &:global(.in-view strong) {
+        transform: translateY(0);
+    }
+}
+.skillsList {
+    width: 42%;
+    margin-top: 30px;
+
+    @media (max-width: 1023px) {
+        width: 100%;
+    }
+
+    .skill {
+        min-height: 200px;
+        background: #262626;
+        padding: 35px 30px;
+        color: #fff;
+
+        + .skill {
+            margin-top: 40px;
+
+            @media (max-width: 1023px) {
+                margin-top: 20px;
+            }
+        }
+
+        strong {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #fff;
+
+            span {
+                font-size: clamp(16px,3vw,20px);
+                font-weight: 500;
+            }
+        }
+
+        ul {
+            margin-top: 30px;
+
+            li {
+                position: relative;
+                font-size: clamp(14px,3vw,18px);
+                line-height: 1.6;
+                color: #c3c3c3;
+                word-break: keep-all;
+                padding-left: 10px;
+
+                + li {
+                    margin-top: 5px;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 13px;
+                    left: 0;
+                    width: 5px;
+                    height: 1px;
+                    background: #c3c3c3;
+                }
+            }
+        }
+    }
+}
