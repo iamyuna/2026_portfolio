@@ -7,8 +7,7 @@
             "#Vue",
             "#Scss"
         ],
-        "img": "portfolio_aidt",
-        "link": "javascript:vold(0)"
+        "img": "portfolio_aidt"
     },
     {
         "id": 2,
@@ -46,7 +45,8 @@
             "Gsap"
         ],
         "img": "portfolio_2026",
-        "link": "/"
+        "link": "/",
+        "code": "https://github.com/iamyuna/2026_portfolio"
     },
     {
         "id": 5,
@@ -59,7 +59,8 @@
             "Tailwind"
         ],
         "img": "portfolio_accountapp",
-        "link": "https://iamyuna.github.io/accountapp"
+        "link": "https://iamyuna.github.io/accountapp",
+        "code": "https://github.com/iamyuna/accountapp"
     },
     {
         "id": 6,
@@ -124,6 +125,7 @@
             "JQuery"
         ],
         "img": "portfolio_web",
-        "link": "https://iamyuna.github.io/2023_portfolio"
+        "link": "https://iamyuna.github.io/2023_portfolio",
+        "code": "https://github.com/iamyuna/2023_portfolio"
     }
 ]

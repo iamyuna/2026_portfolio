@@ -74,7 +74,7 @@ export default function Works() {
                     <ul className={styles.projectList}>
                         {projects.map(project => (
                             <li key={project.id} className={`${styles.project} project-item`}>
-                                <a href={project.link} target="_blank">
+                                <div className={styles.projectWrap}>
                                     <img src={getImage(project.img)} alt="" />
                                     <div className={styles.text}>
                                         <div className={styles.skills}>
@@ -87,7 +87,15 @@ export default function Works() {
                                         <div className={styles.tit}><strong>{project.title}</strong></div>
                                         <div className={styles.des}><p>{project.des}</p></div>
                                     </div>
-                                </a>
+                                    <div className={styles.viewBtn}>
+                                        {project.link ? (
+                                            <a href={project.link} target="_blank">View Site</a>
+                                        ) : null}
+                                        {project.code ? (
+                                            <a href={project.code} target="_blank">View Code</a>
+                                        ) : null}
+                                    </div>
+                                </div>
                             </li>
                         ))}
                     </ul>
