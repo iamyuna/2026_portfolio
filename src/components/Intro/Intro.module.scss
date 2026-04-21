@@ -22,54 +22,46 @@
         &::before {
             content: "";
             position: absolute;
-            top: 50px;
-            left: 50%;
-            width: 100vw;
-            height: 100vh;
-            transform: translateY(-50px);
-            margin-left: -50vw;
+            top: 0;
+            left: 0;
+            width: 62px;
+            height: 62px;
             background: #191919;
-            animation: logoAni 0.6s ease forwards 4.3s;
+            transform: translate(0, 0) scale(100, 50);
             will-change: transform;
+            animation: logoAni 0.6s ease forwards 4.3s;
+        }
+        @keyframes logoAni {
+            0% {
+                transform: translate(0, 0) scale(100, 50);
+            }
 
-            @media (max-width: 1023px) {
-                top: 20px;
-                transform: translateY(-20px);
+            60% {
+                transform: translate(0, 50px) scale(1, 1);
+            }
+
+            100% {
+                transform: translate(0, 50px) scale(0, 0);
             }
         }
-    }
-
-}
-@keyframes logoAni {
-    0% {
-        left: 50%;
-        transform: translateY(-50px);
-        margin-left: -50vw;
-        width: 100vw;
-        height: 100vh;
 
         @media (max-width: 1023px) {
-            transform: translateY(-20px);
-        }
-    }
-    50% {
-        left: 0;
-        transform: translateY(0px);
-        margin-left: 0;
-        width: 62px;
-        height: 62px;
+            &::before {width: 40px; height: 40px;}
 
-        @media (max-width: 1023px) {
-            width: 40px;
-            height: 40px;
+            @keyframes logoAni {
+                0% {
+                    transform: translate(0, 0) scale(100, 50);
+                }
+
+                60% {
+                    transform: translate(0, 20px) scale(1, 1);
+                }
+
+                100% {
+                    transform: translate(0, 20px) scale(0, 0);
+                }
+            }
         }
-    }
-    100% {
-        left: 0;
-        transform: translateY(0px);
-        margin-left: 0;
-        width: 0;
-        height: 0;
     }
 }
 .introText {
