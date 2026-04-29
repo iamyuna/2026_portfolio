@@ -55,10 +55,10 @@ export default function Works() {
     { scope: sectionRef }
     );
 
-    const images = import.meta.glob('/src/assets/images/*.png', { eager: true });
+    const images = import.meta.glob('/src/assets/images/*.jpg', { eager: true });
 
     const getImage = (name) => {
-        return images[`/src/assets/images/${name}.png`]?.default;
+        return images[`/src/assets/images/${name}.jpg`]?.default;
     };
 
     return (
