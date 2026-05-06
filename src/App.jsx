@@ -12,7 +12,6 @@ import useScrollAni from './hooks/useScrollAni'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function App() {
@@ -44,7 +43,6 @@ function App() {
         },
       });
     }
-
   });
 
   return (
